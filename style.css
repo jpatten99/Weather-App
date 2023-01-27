@@ -58,3 +58,8 @@ body{
   align-items: center;
   flex: 1;
 }
+
+
+.current{
+  background-color: rebeccapurple;
+}
