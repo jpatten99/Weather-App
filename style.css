@@ -1,8 +1,11 @@
+
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 #header{
@@ -14,4 +17,44 @@ body{
   opacity: 80;
   background-color: black;
   color: white;
+  display: flex;  
+  flex: 1;
+  justify-content: center;
+}
+
+#locationForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: white;
+  border-width: 1px;
+  border-style:dashed;
+  padding: 0px 40px;
+}
+
+#mainContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("Chiback.jpeg");
+  background-color: #cccccc;
+  flex: 2;
+  
+}
+
+#mainContentMid{
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer{
+  background-color: black;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }

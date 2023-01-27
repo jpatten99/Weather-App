@@ -8,12 +8,12 @@ const searchCity = () => {
 }
 
 const renderData = (filteredWeatherData) => {
-  document.getElementById("cityName").innerText = "City Name: " + filteredWeatherData.cityName;
-  document.getElementById("temperature").innerText = "Current Temperature: " + filteredWeatherData.temperature;
-  document.getElementById("feelsLike").innerText = "Feels Like: " + filteredWeatherData.feelsLike;
+  document.getElementById("cityName").innerText = filteredWeatherData.cityName;
+  document.getElementById("temperature").innerText = "Temp: " + filteredWeatherData.temperature + "<->";
+  document.getElementById("feelsLike").innerText = "Feels Like: " + filteredWeatherData.feelsLike + "<->";
   document.getElementById("windSpeed").innerText = "Wind Speed: " + filteredWeatherData.windSpeed;
-  document.getElementById("minTemp").innerText = "Minimum Temperature: " + filteredWeatherData.minTemp;
-  document.getElementById("maxTemp").innerText = "Maximum Temperature: " + filteredWeatherData.maxTemp;
+  document.getElementById("minTemp").innerText = "Min Temp: " + filteredWeatherData.minTemp;
+  document.getElementById("maxTemp").innerText = "Max Temp: " + filteredWeatherData.maxTemp;
 }
 
 
