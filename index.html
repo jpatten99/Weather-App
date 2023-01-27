@@ -8,9 +8,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Type a city</p>
-  <input type="text" id="cityInput">
-  <button id="searchButton">Search</button>
+  <div id="header">
+    <p>Type a city</p>
+    <input type="text" id="cityInput">
+    <button id="searchButton">Search</button>
+  </div>
+
+
+  <div id="mainContent">
+    <span id="mainContentTop"><h1 id="cityName">Toledo</h1></span>
+    <span id="mainContentMid">
+      <div>
+        <h3 id="temperature"></h3>
+      </div>
+      <div>
+        <h3 id="feelsLike"></h3>
+      </div>
+      <div>
+        <h3 id="windSpeed"></h3>
+      </div>
+    </span>
+    <span id="mainContentBottom">
+      <div>
+        <h4 id="minTemp"></h4>
+      </div>
+      <div>
+        <h4 id="maxTemp"></h4>
+      </div>
+    </span>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
