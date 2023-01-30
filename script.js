@@ -101,7 +101,7 @@ document.getElementById("searchButton").addEventListener("click", ()=>{
   
 });
 
-//Call API on page load with my hometown!
+//Call API on page load with Toledo, OH, USA as argument
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=toledo,OH,US&APPID=07fd1335c6d1a5773a284f1a9ba67c10&units=imperial`, {mode: 'cors'})
   .then(function(response) {
     return response.json();

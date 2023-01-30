@@ -9,15 +9,17 @@
 </head>
 <body>
 
+  <!-- Top bar -->
   <div id="header">
+    <!-- Location input form -->
     <div id="locationForm">
       <p>Type a city</p>
-      <input type="text" id="cityInput">
+      <input type="text" id="cityInput" placeholder="Paris">
       <button id="searchButton">Search</button>
     </div>
   </div>
 
-
+  <!-- Where the weather data gets rendered -->
   <div id="mainContent">
     <span id="mainContentTop"><h1 id="cityName">Toledo</h1></span>
     <span id="mainContentMid">
@@ -39,12 +41,14 @@
         <h4 id="maxTemp"></h4>
       </div>
     </span>
+    <!-- Buttons to change temperature units -->
     <div id="unitButtons">
       <button id="fahrenheit" value="*F" onclick='convertTemps(this.value)' class="current">*F</button>
       <button id="celsius" value="*C" onclick='convertTemps(this.value)'>*C</button>
     </div>
   </div>
 
+  <!-- Bottom bar -->
   <div id="footer">
     <p>Data supplied by <a href="https://openweathermap.org/">OpenWeatherMap API</a>!</p>
   </div>
